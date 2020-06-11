@@ -1,22 +1,27 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // 文字
-    char a = 'a';
-    // 整数 byte short int long
-    int x = 10;
-    long y = 55555555L; // longを使う時には最後にLをつける
-    // 不動少数点数 float double
-    double d = 23423.344;
-    float f = 32.33F;
-    // 論理値
-    boolean flag = true; // false
+    // 演算
+    // + - * / %
+    // ++ -- 1を足す 1を引く
+    // int i;
+    // i = 10 / 3;
+    // System.out.println(i); // 3
+    // i = 10 % 3;
+    // System.out.println(i); // 1
+    // int x = 5;
+    // x++;
+    // System.out.println(x); // 6
+    // x--;
+    // System.out.println(x); // 5
 
-    
-    // 文字列
-    // \n 改行
-    // \t タブ
-    String msg = "Hello wo\nrld Again\t!";
-    System.out.println(msg);
+    // int x = 5;
+    // // x = x + 12;
+    // x += 12;
+    // System.out.println(x);
+
+    String s;
+    s = "hello  " + "world";
+    System.out.println(s);
   }
 }
