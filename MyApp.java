@@ -1,14 +1,21 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // キャスト
-    double d = 52343.231;
-    int i = (int)d;
-    System.out.println(i);
+    // if
+    // > >= < <= == !=
+    // && || !
+    int score = 95;
+    // if (score > 80) {
+    //   System.out.println("Great!");
+    // } else if (score > 60) {
+    //   System.out.println("Good!");
+    // } else {
+    //   System.out.println("so so ... !");
+    // }
 
-    int i = 10;
-    double d = (double)i / 4; // ここで行われているのは整数の計算なので、iをdouble型に変換することで小数の計算を行える
-    System.out.println(d);
+    // 条件演算子を使った書き方
+    String msg = score > 80 ? "Great!" : "so so ... !";
+    System.out.println(msg);
 
   }
 }
