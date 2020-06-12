@@ -1,27 +1,14 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // 演算
-    // + - * / %
-    // ++ -- 1を足す 1を引く
-    // int i;
-    // i = 10 / 3;
-    // System.out.println(i); // 3
-    // i = 10 % 3;
-    // System.out.println(i); // 1
-    // int x = 5;
-    // x++;
-    // System.out.println(x); // 6
-    // x--;
-    // System.out.println(x); // 5
+    // キャスト
+    double d = 52343.231;
+    int i = (int)d;
+    System.out.println(i);
 
-    // int x = 5;
-    // // x = x + 12;
-    // x += 12;
-    // System.out.println(x);
+    int i = 10;
+    double d = (double)i / 4; // ここで行われているのは整数の計算なので、iをdouble型に変換することで小数の計算を行える
+    System.out.println(d);
 
-    String s;
-    s = "hello  " + "world";
-    System.out.println(s);
   }
 }
