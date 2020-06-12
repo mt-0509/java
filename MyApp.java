@@ -1,23 +1,17 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // switch
-    String signal = "green";
-    switch (signal) {
-      case "red":
-        System.out.println("stop!");
-        break;
-      case "blue":
-      case "green":
-        System.out.println("go!");
-        break;
-      case "yellow":
-        System.out.println("caution!");
-        break;
-      default:
-        System.out.println("wrong signal!");
-      break;
+    // while
+    // 0 - 9
+    int i = 1;
+    while (i < 10) {
+      System.out.println(i);
+      i++;
     }
+    do {
+      System.out.println(i);
+      i++;
+    } while (i < 10);
 
   }
 }
