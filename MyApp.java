@@ -1,22 +1,17 @@
 public class MyApp {
+  // method
+  public static String sayHi(String name) {
+    // System.out.println("Hi!");
+    // System.out.println("Hi! " + name);
+    return "Hi! " + name;
+  }
 
   public static void main(String[] args) {
-    int x = 10;
-    int y = x;
-    y = 5;
-    System.out.println(x);
-    System.out.println(y);
+    // sayHi();
+    // sayHi("Tom");
+    // sayHi("Bob");
+    String msg = sayHi("Steve");
+    System.out.println(msg);
 
-    int [] a = {3, 5, 7};
-    int [] b = a; // 参照値が代入される
-    b[1] = 8;
-    System.out.println(a[1]);
-    System.out.println(b[1]);
-
-    String s = "hello";
-    String t = s;
-    t = "world";
-    System.out.println(s);
-    System.out.println(t);
   }
 }
