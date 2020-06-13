@@ -1,17 +1,17 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // while
+    // for
     // 0 - 9
-    int i = 1;
-    while (i < 10) {
+    // break
+    // continue
+    for (int i = 0; i < 10; i++) {
+      if (i == 5) {
+        // break;
+        continue;
+      }
       System.out.println(i);
-      i++;
     }
-    do {
-      System.out.println(i);
-      i++;
-    } while (i < 10);
 
   }
 }
