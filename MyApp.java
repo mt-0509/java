@@ -2,22 +2,15 @@ public class MyApp {
 
   public static void main(String[] args) {
     // 配列
-    int[] sales; //配列の宣言
-    sales = new int[3]; // intを3つ分確保
-    sales[0] = 100;
-    sales[1] = 200;
-    sales[2] = 300;
+    // sales.length
+    int[] sales = {700, 400, 500}; 
 
-    int[] sales;
-    sales = new int[] {100, 200, 300};
+    for (int i = 0; i < sales.length; i++) {
+      System.out.println(sales[i]);
+    }
 
-    int[] sales = {100, 200, 300};
-    
-    System.out.println(sales[1]); // 200
-
-    sales[1] = 1000;
-
-    System.out.println(sales[1]); // 1000
-
+    for (int sale : sales) {   // salesから1つずつ要素を取り出して処理を行う
+      System.out.println(sale);
+    }
   }
 }
