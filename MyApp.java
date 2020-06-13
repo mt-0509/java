@@ -1,16 +1,22 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    // 配列
-    // sales.length
-    int[] sales = {700, 400, 500}; 
+    int x = 10;
+    int y = x;
+    y = 5;
+    System.out.println(x);
+    System.out.println(y);
 
-    for (int i = 0; i < sales.length; i++) {
-      System.out.println(sales[i]);
-    }
+    int [] a = {3, 5, 7};
+    int [] b = a; // 参照値が代入される
+    b[1] = 8;
+    System.out.println(a[1]);
+    System.out.println(b[1]);
 
-    for (int sale : sales) {   // salesから1つずつ要素を取り出して処理を行う
-      System.out.println(sale);
-    }
+    String s = "hello";
+    String t = s;
+    t = "world";
+    System.out.println(s);
+    System.out.println(t);
   }
 }
