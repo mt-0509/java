@@ -6,29 +6,38 @@ class User {
     this.name = name;
   }
 
-  // this()
-
-  User() {
-    // this.name = "Me!";
-    this("Me!");
-  }
-
-
   void sayHi() {
     System.out.println("hi!" + this.name);
+  }
+}
+
+class AdminUser extends User {
+
+  AdminUser(String name) {
+    super(name);
+  }
+
+  void sayHello() {
+    System.out.println("hello!" + this.name);
+  }
+
+  // override
+  @Override
+  void sayHi() {
+    System.out.println("[admin] hi!" + this.name);
   }
 }
 
 public class MyApp {
 
   public static void main(String[] args) {
-
-    // Class
-    User tom;
-    // tom = new User("Tom"); 
-    tom = new User(); 
-    
+    User tom = new User("tom");
     System.out.println(tom.name);
     tom.sayHi();
+
+    AdminUser bob = new AdminUser ("bob");
+    System.out.println(bob.name);
+    bob.sayHi();
+    bob.sayHello();
   }
 }
