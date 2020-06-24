@@ -1,23 +1,28 @@
-// static
+// final:変更ができない
 
-class User {
-  private String name;
-  private static int count = 0; // クラス変数
-
-  static {
-    User.count = 0;
-    System.out.println("Static initializer");
-  }
-
-  {
-    System.out.println("Instance initializer");
-
-  }
+final class User {
+  protected String name;
+  private static final double VERSION = 1.1;
 
   public User(String name) {
     this.name = name;
-    User.count++;
-    System.out.println("Constructor");
+    User.VERSION = 1.2;
+  }
+
+  public final void sayHi() {
+    System.out.println("hi! " + this.name);
+  }
+
+  class Adminuser extends User {
+
+    public Adminuser(String name) {
+      super(name);
+    }
+
+    @Override
+    public void sayHi() {
+      System.out.println("[admin] hi! " + this.name);
+    }
   }
 
   public static void getInfo() { // クラスメソッド
