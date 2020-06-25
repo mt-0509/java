@@ -1,30 +1,30 @@
-// 抽象クラス -> 具象クラス
+// interface
 
-abstract class User {
-  public abstract void sayHi(); // 抽象メソッド
-}
-
-class JapaneseUser extends User {
-  @Override
-  public void sayHi() {
-    System.out.println("こんにちは！");
+interface Printable {
+  // 定数
+  double VERSION = 1.2;
+  // 抽象メソッド
+  void print();
+  // defaultメソッド
+  public default void getInfo() {
+    System.out.println("I/F ver. " + Printable.VERSION);
   }
+  // staticメソッド
 }
 
-class AmericanUser extends User {
+class User implements Printable {
   @Override
-  public void sayHi() {
-    System.out.println("Hi!");
+  public void print() {
+    System.out.println("Now printing user profile...");
   }
 }
 
 public class MyApp {
 
   public static void main(String[] args) {
-    AmericanUser tom = new AmericanUser();
-    JapaneseUser aki = new JapaneseUser();
-    tom.sayHi();
-    aki.sayHi();
+    User tom = new User();
+    tom.print();
+    tom.getInfo();
   }
 
 }
