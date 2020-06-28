@@ -1,15 +1,18 @@
+import java.util.Random;
+
 public class MyApp {
 
   public static void main(String[] args) {
+    double d = 53.234;
+    System.out.println(Math.ceil(d)); // 54
+    System.out.println(Math.floor(d)); // 53
+    System.out.println(Math.round(d)); // 53
+    System.out.println(Math.PI); 
+    // Math.random()
 
-    int score = 50;
-    double height = 165.8;
-    String name = "taguchi";
-
-    System.out.printf("name: %s, score: %d, height: %f\n", name, score, height);
-    System.out.printf("name: %-10s, score: %10d, height: %5.2f\n", name, score, height);
-    
-    String s = String.format("name: %10s, score: %-10d, height: %5.2f\n", name, score, height);
-    System.out.println(s);
+    Random r = new Random();
+    System.out.println(r.nextDouble()); // 0 - 1
+    System.out.println(r.nextInt(100)); // 0 - 100
+    System.out.println(r.nextBoolean()); 
   }
 }
