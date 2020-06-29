@@ -3,26 +3,29 @@ import java.util.*;
 public class MyApp {
 
   public static void main(String[] args) {
-    // ArrayList
-    // LinkedList ｘ検索 ○ 追加／削除
-
-    // ArrayList<Integer> sales = new ArrayList<>();
-    List<Integer> sales = new ArrayList<>();
+    // HashSet
+    // TreeSet
+    // LinkedHashSet
+    
+    // HashSet<Integer> sales = new HashSet<>();
+    Set<Integer> sales = new HashSet<>();
 
     sales.add(10);
     sales.add(20);
     sales.add(30);
+    sales.add(10);
 
-    for (int i = 0; i < sales.size(); i++) {
-      System.out.println(sales.get(i));
-    }
 
-    sales.set(0, 100); // 要素の変更
-    sales.remove(2);
+    System.out.println(sales.size()); // 3
 
-    for (Integer sale : sales) { // for文のもう1つの書き方
+    for (Integer sale : sales) {
       System.out.println(sale);
     }
 
+    sales.remove(30);
+
+    for (Integer sale : sales) {
+      System.out.println(sale);
+    }
   }
 }
