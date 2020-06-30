@@ -3,29 +3,29 @@ import java.util.*;
 public class MyApp {
 
   public static void main(String[] args) {
-    // HashSet
-    // TreeSet
-    // LinkedHashSet
-    
-    // HashSet<Integer> sales = new HashSet<>();
-    Set<Integer> sales = new HashSet<>();
+    // HashMap: key value
+    // TreeMap
+    // LinkedHashMap
 
-    sales.add(10);
-    sales.add(20);
-    sales.add(30);
-    sales.add(10);
+    // HashMap<String, Integer> sales = new HashMap();
+    Map<String, Integer> sales = new HashMap<>();
 
+    sales.put("tom", 10);
+    sales.put("bob", 20);
+    sales.put("steve", 30);
 
+    System.out.println(sales.get("tom")); // 10
     System.out.println(sales.size()); // 3
 
-    for (Integer sale : sales) {
-      System.out.println(sale);
+    for (Map.Entry<String, Integer> sale : sales.entrySet()) {
+      System.out.println(sale.getKey() + ":" + sale.getValue());
     }
 
-    sales.remove(30);
+    sales.put("tom", 100);
+    sales.remove("steve");
 
-    for (Integer sale : sales) {
-      System.out.println(sale);
+    for (Map.Entry<String, Integer> sale : sales.entrySet()) {
+      System.out.println(sale.getKey() + ":" + sale.getValue());
     }
   }
 }
