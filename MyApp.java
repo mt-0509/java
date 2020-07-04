@@ -4,9 +4,10 @@ import java.time.format.DateTimeFormatter;
 public class MyApp {
 
   public static void main(String[] args) {
-    int a = 3;
-    int b = 5;
-    int c = a * b;
-    System.out.println("縦幅 " + a + " 横幅 " + b + " の長方形の面積は、" + c);
+    boolean eror = true;
+    char moji = '駆';
+    double pi = 3.14;
+    long num = 314159265853979L;
+    String damage = "ミナトの攻撃！敵に15ポイントのダメージを与えた。";
   }
 }
