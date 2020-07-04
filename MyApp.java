@@ -4,9 +4,9 @@ import java.time.format.DateTimeFormatter;
 public class MyApp {
 
   public static void main(String[] args) {
-    final double PI = 3.14;
-    int pie = 5;
-    System.out.println("半径" + pie + "cmのパイの面積は、 ");
-    System.out.println(pie * pie * PI);
+    int a = 3;
+    int b = 5;
+    int c = a * b;
+    System.out.println("縦幅 " + a + " 横幅 " + b + " の長方形の面積は、" + c);
   }
 }
