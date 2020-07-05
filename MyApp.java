@@ -2,9 +2,11 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    double d = 8.5 / 2;
-    long l = 5 + 2L;
-    System.out.println(d);
-    System.out.println(l);
+    String name = "すがわら";
+    String message;
+    message = name + "さん、こんにちは";
+    System.out.print("私の名前は");
+    System.out.print(name);
+    System.out.print("です");
   }
 }
