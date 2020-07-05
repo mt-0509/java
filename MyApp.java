@@ -2,8 +2,7 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    String age = "31";
-    int n = Integer.parseInt(age);
-    System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。");
+    int r = new java.util.Random().nextInt(90);
+    System.out.println("あなたは多分、" + r + "歳ですね？");
   }
 }
