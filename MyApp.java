@@ -2,13 +2,26 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    int [] scores = {20, 30, 40, 50, 80};
-    int count = 0;
-    for (int i = 0; i < scores.length; i++) {
-      if (scores[i] >= 50) {
-        count++;
+    int[] seq = new int[10];
+    for (int i = 0; i < 10; i++) {
+      seq[i] = new java.util.Random().nextInt(4);
+    }
+
+    for (int i = 0; i < seq.length; i++) {
+      switch (seq[i]) {
+        case 0:
+          System.out.print("A ");
+          break;
+        case 1:
+          System.out.print("T ");
+          break;
+        case 2:
+          System.out.print("G ");
+          break;
+        case 3:
+          System.out.print("C ");
+          break;
       }
     }
-    System.out.println("50点以上の科目数は:" + count);
   }
 }
