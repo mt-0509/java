@@ -2,13 +2,12 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    int[] numbers = {3,4,9};
-    System.out.println("1桁の数字を入力してください");
-    int input = new java.util.Scanner(System.in).nextInt();
-    for (int num : numbers) {
-      if (input == num) {
-        System.out.println("アタリ！");
-      }
-    }
+    System.out.println("メソッドを呼び出します");
+    hello();
+    System.out.println("メソッドの呼び出しが終わりました");
+  }
+
+  public static void hello() {
+    System.out.println("湊さん、こんにちは");
   }
 }
