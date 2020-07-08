@@ -2,8 +2,8 @@
 public class MyApp {
 
   public static void main(String[] args) {
-    int[] array = {1,2,3};
-    array = null;
-    array[0] = 10;
+    int [] [] scores = {{40,50,60},{80,60,70}};
+    System.out.println(scores.length); // 2が出力される
+    System.out.println(scores[0].length); // 3が出力される
   }
 }
