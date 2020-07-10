@@ -1,20 +1,19 @@
 
 public class MyApp {
 
-  public static double calcTriangleArea(double bottom, double height) {
-    double ans = bottom * height / 2;
-    return ans;
+  public static void email(String title,String address, String text) {
+    System.out.println(address + "に以下のメールを送信しました");
+    System.out.println("件名:" + title);
+    System.out.println("本文:" + text);
   }
 
-  public static double calcCircleArea(double radius) {
-    double ans = radius * radius * 3.14;
-    return ans;
+  public static void email(String address, String text) {
+    System.out.println(address + "に以下のメールを送信しました");
+    System.out.println("件名:無題");
+    System.out.println("本文:" + text);
   }
   
   public static void main(String[] args) {
-    double Ans1 = calcTriangleArea(5,10);
-    double Ans2 = calcCircleArea(5);
-    System.out.println("三角形の面積は" + Ans1 + "㎠です。");
-    System.out.println("円の面積は" + Ans2 + "㎠です。");
+    email("toshimasa@co.jp", "こんにちは！");
   }
 }
