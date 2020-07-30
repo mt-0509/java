@@ -1,6 +1,8 @@
 public class Main {
 
   public static void main(String[] args) {
-    Hero h = new Hero();
+    Empty e = new Empty();
+    String s = e.toString();
+    System.out.println(s);
   }
 }
