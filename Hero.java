@@ -1,5 +1,5 @@
 public class Hero {
-  private int hp;
+  int hp;
   String name;
   Sword sword;
 

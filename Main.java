@@ -1,8 +1,8 @@
 public class Main {
-  public static void printAnything(Object o) {
-    System.out.println(o.toString());
-  }
   public static void main(String[] args) {
-    printAnything("やったー");
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+    System.out.println(h.toString());
   }
 }
