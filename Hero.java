@@ -11,4 +11,7 @@ public class Hero {
     System.out.println(this.name + "は死んでしまった！");
     System.out.println("GAME OVERです。");
   }
+  public String toString() {
+    return "名前:" + this.name + "/HP:" + this.hp;
+  }
 }
