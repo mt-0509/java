@@ -2,6 +2,7 @@ public class Hero {
   int hp;
   String name;
   Sword sword;
+  static int money;
 
   public void sleep() {
     this.hp = 100;
