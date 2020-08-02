@@ -1,6 +1,7 @@
 public class Main {
   public static void main(String[] args) {
-    Hero.money = 100;
-    System.out.println(Hero.money);
+    Hero h = new Hero();
+    h.setRandomMoney();
+    System.out.println(h.money);
   }
 }
