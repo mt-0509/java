@@ -1,8 +1,10 @@
 public class Main {
   public static void main(String[] args) {
-    Hero.setRandomMoney();
-    System.out.println(Hero.money);
-    Hero h = new Hero();
-    System.out.println(h.money);
+    Account a = new Account();
+    a.accountNumber = "4649";
+    a.balance = 1592;
+    System.out.println(a);
+
+    
   }
 }
