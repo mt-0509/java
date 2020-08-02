@@ -7,12 +7,15 @@ public class Account {
   }
 
   public boolean equals(Object o) {
-    if (o == this) {return true;}
+    if (o == this) {
+      System.out.println("1");
+      return true;}
     if (o instanceof Account) {
       Account a = (Account)o;
       String an1 = this.accountNumber.trim();
       String an2 = a.accountNumber.trim();
       if (an1.equals(an2)) {
+        System.out.println("2");
         return true;
       }
     }
