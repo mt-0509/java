@@ -12,8 +12,21 @@ public class Judge {
     int day = r.getNiti();
 
     c.set(seireki,month,day);
-    Date d = c.getTime();
-  
-    System.out.println(d);
+
+    String[] week = new String[7];
+    week[0] = "日";
+    week[1] = "月";
+    week[2] = "火";
+    week[3] = "水";
+    week[4] = "木";
+    week[5] = "金";
+    week[6] = "土";
+
+    int week_int = c.get(c.DAY_OF_WEEK);
+    System.out.println("その日は" + week[week_int - 1] + "曜日です");
+
+
+    // Date d = c.getTime();
+    // System.out.println(d);
   }
 }
