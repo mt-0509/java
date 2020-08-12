@@ -24,9 +24,5 @@ public class Judge {
 
     int week_int = c.get(c.DAY_OF_WEEK);
     System.out.println("その日は" + week[week_int - 1] + "曜日です");
-
-
-    // Date d = c.getTime();
-    // System.out.println(d);
   }
 }
